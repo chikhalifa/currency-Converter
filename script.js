@@ -2,11 +2,7 @@ const select = document.querySelectorAll('select');
 const input = document.querySelectorAll('input');
 const API_URL ="https://api.exchangerate.host/latest";
 let html ="";
-$(document).ready(function(){
- 
-  // Initialize select2
- $('[data-toggle="select2"]').select2();
-})
+
 async function calculateCurrency(){
 	const res = await fetch(API_URL);
 	const data = await res.json();
