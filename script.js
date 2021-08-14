@@ -31,7 +31,7 @@ async function calculateCurrency(){
 
 	select[0].addEventListener('change',()=>convertCurrency(1,0))
 
-	input[1].addEventListener('change',()=>convertCurrency(0,1))
+	select[1].addEventListener('change',()=>convertCurrency(0,1))
 	
 
 }
